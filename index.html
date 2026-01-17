@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> My cool website!!!!!!</title>
+        <style>
+            img {
+                width: 600px;
+                height: auto;
+            }
+            h1 {
+                color: red;
+            }
+        </style>
+    </head>
+     <body>
+      <h1> My cool website!!!!!!?!?!?!??!?!</h1>
+      <p> HTML sucks!!</p>
+      <img src="https://www.truxnow.com/hs-fs/hubfs/Standard%20Dump%20Truck.jpg?width=624&height=468&name=Standard%20Dump%20Truck.jpg">
+      <blockquote>"crazy - Charlotte"</blockquote>
+      <button onclick="changeQuote()">Change Quote</button>
+
+      <script>
+        var index = 0;
+
+        function changeQuote() {
+            var quotes = [
+                `"I really hate homophobia!" - Joe Biden`,
+                `"I'm so tired rn" - Charlotte`,
+                `"ugh" -`,
+                `"why -Charlotte"`
+            ]
+            var blockquote = document.querySelector("blockquote");
+            blockquote.innerHTML = quotes[index];
+            index++;
+            if (index >= 4) {
+                index = 0;
+            }
+        }
+        </script>
+     </body>
+</html>
